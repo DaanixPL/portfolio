@@ -48,45 +48,45 @@ export default function Projects() {
           Selected open-source projects — click to view the source.
         </p>
 
-        <div className="projects__grid">
-          {PROJECTS.map((project) => (
-            <article className="project-card" key={project.name}>
-             <div className="project-card__screenshot">
-                <img
-                  className="project-card__screenshot-img"
-                  src={project.image}
-                  alt={`${project.name} screenshot`}
-                  loading="lazy"
-                />
+     <div className="projects__grid">
+        {PROJECTS.map((project) => (
+          <article className="project-card" key={project.name}>
+            <div className="project-card__screenshot">
+              <img
+                className="project-card__screenshot-img"
+                src={project.image}
+                alt={`${project.name} screenshot`}
+                loading="lazy"
+              />
+            </div>
+      
+            <div className="project-card__body">
+              <div className="project-card__top">
+                <h3 className="project-card__name">{project.name}</h3>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-card__link"
+                  aria-label={`View ${project.name} on GitHub`}
+                >
+                  <GithubIcon />
+                  <span>View on GitHub</span>
+                </a>
               </div>
+      
+              <p className="project-card__desc">{project.description}</p>
+      
+              <div className="project-card__tags">
+                {project.tags.map((tag) => (
+                  <span key={tag} className="project-card__tag">
+                    {tag}
+                  </span>
+                ))}
               </div>
-
-              <div className="project-card__body">
-                <div className="project-card__top">
-                  <h3 className="project-card__name">{project.name}</h3>
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-card__link"
-                    aria-label={`View ${project.name} on GitHub`}
-                  >
-                    <GithubIcon />
-                    <span>View on GitHub</span>
-                  </a>
-                </div>
-
-                <p className="project-card__desc">{project.description}</p>
-
-                <div className="project-card__tags">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="project-card__tag">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
