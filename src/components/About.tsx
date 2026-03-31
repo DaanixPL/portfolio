@@ -18,6 +18,7 @@ export default function About() {
             <p>
               While my main focus is backend development, I'm comfortable working across the full stack, integrating APIs with React frontends and delivering complete, production-ready solutions.
             </p>
+            <p>
               Outside of client work, I'm also exploring reverse engineering, digging into how software works under the hood, which gives me a deeper understanding of security and low-level system behavior.
             </p>
 
