@@ -1,10 +1,14 @@
 import './Projects.css';
 
+import nureaperImg from 'projects/nureaper.png';
+import odwyklabImg from 'projects/odwyklab.png';
+
 interface Project {
   name: string;
   description: string;
   tags: string[];
   url: string;
+  image: string;
 }
 
 const PROJECTS: Project[] = [
@@ -14,6 +18,7 @@ const PROJECTS: Project[] = [
       'A NuGet package scanner that helps identify and analyze dependencies.',
     tags: ['C#', 'Dockerfile'],
     url: 'https://github.com/DaanixPL/NuReaper',
+    image: nureaperImg,
   },
   {
     name: 'OdwykLab',
@@ -21,6 +26,7 @@ const PROJECTS: Project[] = [
       'A full-stack application featuring JWT authentication and complete user session management from scratch.',
     tags: ['C#', 'ASP.NET', 'HTML', 'Dockerfile'],
     url: 'https://github.com/DaanixPL/OdwykLab',
+    image: odwyklabImg,
   },
 ];
 
@@ -45,17 +51,14 @@ export default function Projects() {
         <div className="projects__grid">
           {PROJECTS.map((project) => (
             <article className="project-card" key={project.name}>
-              <div className="project-card__screenshot" aria-label="Screenshot coming soon">
-                <div className="project-card__screenshot-inner">
-                  <span className="project-card__screenshot-icon" aria-hidden="true">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <path d="M21 15l-5-5L5 21" />
-                    </svg>
-                  </span>
-                  <span className="project-card__screenshot-label">Screenshot coming soon</span>
-                </div>
+             <div className="project-card__screenshot">
+                <img
+                  className="project-card__screenshot-img"
+                  src={project.image}
+                  alt={`${project.name} screenshot`}
+                  loading="lazy"
+                />
+              </div>
               </div>
 
               <div className="project-card__body">
