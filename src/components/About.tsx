@@ -9,15 +9,28 @@ export default function About() {
 
         <div className="about__grid">
           <div className="about__text">
-            {/* TODO: Replace with real bio */}
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              I'm a self-taught backend developer focused on ASP.NET Core and C#. I started programming out of curiosity — writing small automation scripts — and gradually moved into building real applications and APIs.
             </p>
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+              Over the past two years I've been working with C# and ASP.NET Core, building projects ranging from SaaS applications to security analysis tools. I focus on clean architecture, maintainable code, and building backends that are reliable and easy to scale.
             </p>
             <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur.
+              Outside of client work, I'm also exploring reverse engineering — digging into how software works under the hood, which gives me a deeper understanding of security and low-level system behavior.
+            </p>
+
+
+Haha okej — ale nie pisz że front pisze Ci AI na stronie portfolio 😂
+
+Napisz to tak:
+
+About Me
+
+I'm a self-taught backend developer focused on ASP.NET Core and C#. I started programming out of curiosity — writing small automation scripts — and gradually moved into building real applications and APIs.
+
+Over the past two years I've been working with C# and ASP.NET Core, building projects ranging from SaaS applications to security analysis tools. I focus on clean architecture, maintainable code, and building backends that are reliable and easy to scale.
+
+While my main focus is backend development, I'm comfortable working across the full stack — integrating APIs with React frontends and delivering complete, production-ready solutions.
             </p>
 
             <div className="about__badges">
@@ -30,7 +43,7 @@ export default function About() {
 
           <div className="about__visual" aria-hidden="true">
             <div className="about__avatar">
-              <span className="about__avatar-initials">vD</span>
+              <span className="about__avatar-initials">vDanix</span>
               <div className="about__avatar-ring" />
               <div className="about__avatar-ring about__avatar-ring--2" />
             </div>
