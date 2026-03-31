@@ -16,21 +16,9 @@ export default function About() {
               Over the past two years I've been working with C# and ASP.NET Core, building projects ranging from SaaS applications to security analysis tools. I focus on clean architecture, maintainable code, and building backends that are reliable and easy to scale.
             </p>
             <p>
-              Outside of client work, I'm also exploring reverse engineering — digging into how software works under the hood, which gives me a deeper understanding of security and low-level system behavior.
+              While my main focus is backend development, I'm comfortable working across the full stack, integrating APIs with React frontends and delivering complete, production-ready solutions.
             </p>
-
-
-Haha okej — ale nie pisz że front pisze Ci AI na stronie portfolio 😂
-
-Napisz to tak:
-
-About Me
-
-I'm a self-taught backend developer focused on ASP.NET Core and C#. I started programming out of curiosity — writing small automation scripts — and gradually moved into building real applications and APIs.
-
-Over the past two years I've been working with C# and ASP.NET Core, building projects ranging from SaaS applications to security analysis tools. I focus on clean architecture, maintainable code, and building backends that are reliable and easy to scale.
-
-While my main focus is backend development, I'm comfortable working across the full stack — integrating APIs with React frontends and delivering complete, production-ready solutions.
+              Outside of client work, I'm also exploring reverse engineering, digging into how software works under the hood, which gives me a deeper understanding of security and low-level system behavior.
             </p>
 
             <div className="about__badges">
