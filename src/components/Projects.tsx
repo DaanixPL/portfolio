@@ -1,8 +1,5 @@
 import './Projects.css';
 
-import nureaperImg from 'projects/nureaper.png';
-import odwyklabImg from 'projects/odwyklab.png';
-
 interface Project {
   name: string;
   description: string;
@@ -18,7 +15,7 @@ const PROJECTS: Project[] = [
       'A NuGet package scanner that helps identify and analyze dependencies.',
     tags: ['C#', 'Dockerfile'],
     url: 'https://github.com/DaanixPL/NuReaper',
-    image: nureaperImg,
+    image: 'projects/nureaper.png',
   },
   {
     name: 'OdwykLab',
@@ -26,7 +23,7 @@ const PROJECTS: Project[] = [
       'A full-stack application featuring JWT authentication and complete user session management from scratch.',
     tags: ['C#', 'ASP.NET', 'HTML', 'Dockerfile'],
     url: 'https://github.com/DaanixPL/OdwykLab',
-    image: odwyklabImg,
+    image: 'projects/odwyklab.png',
   },
 ];
 
