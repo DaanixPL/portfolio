@@ -56,16 +56,23 @@ export default function Projects() {
 
         <div className="projects__grid">
           {PROJECTS.map((project) => (
-            <article className="project-card" key={project.name}>
-              <div className="project-card__screenshot">
-                <img
-                  href={project.demoUrl}
-                  className="project-card__screenshot-img"
-                  src={project.image}
-                  alt={`${project.name} screenshot`}
-                  loading="lazy"
-                />
-              </div>
+           <article className="project-card" key={project.name}>
+              <a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card__screenshot-link"
+                aria-label={`View ${project.name} demo`}
+              >
+                <div className="project-card__screenshot">
+                  <img
+                    className="project-card__screenshot-img"
+                    src={project.image}
+                    alt={`${project.name} screenshot`}
+                    loading="lazy"
+                  />
+                </div>
+              </a>
 
               <div className="project-card__body">
                 <div className="project-card__top">
