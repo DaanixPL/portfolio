@@ -25,7 +25,7 @@ const PROJECTS: Project[] = [
       'A full-stack application featuring JWT authentication and complete user session management from scratch.',
     tags: ['C#', 'ASP.NET', 'HTML', 'Dockerfile'],
     url: 'https://github.com/DaanixPL/OdwykLab',
-    demoUrl: 'https://odwyklab.vdanix.dev',
+    demoUrl: 'https://odwyk.vdanix.dev',
     image: 'projects/odwyklab.png',
   },
 ];
