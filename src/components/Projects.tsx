@@ -5,6 +5,7 @@ interface Project {
   description: string;
   tags: string[];
   url: string;
+  demoUrl: string;
   image: string;
 }
 
@@ -15,6 +16,7 @@ const PROJECTS: Project[] = [
       'A NuGet package scanner that helps identify and analyze dependencies.',
     tags: ['C#', 'Dockerfile'],
     url: 'https://github.com/DaanixPL/NuReaper',
+    demoUrl: 'https://nureaper.vdanix.dev',
     image: 'projects/nureaper.png',
   },
   {
@@ -23,6 +25,7 @@ const PROJECTS: Project[] = [
       'A full-stack application featuring JWT authentication and complete user session management from scratch.',
     tags: ['C#', 'ASP.NET', 'HTML', 'Dockerfile'],
     url: 'https://github.com/DaanixPL/OdwykLab',
+    demoUrl: 'https://odwyklab.vdanix.dev',
     image: 'projects/odwyklab.png',
   },
 ];
@@ -56,6 +59,7 @@ export default function Projects() {
             <article className="project-card" key={project.name}>
               <div className="project-card__screenshot">
                 <img
+                  href={project.demoUrl}
                   className="project-card__screenshot-img"
                   src={project.image}
                   alt={`${project.name} screenshot`}
